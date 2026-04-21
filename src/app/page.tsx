@@ -4,6 +4,7 @@ import { RegionsStrip } from "@/components/RegionsStrip";
 import { VarietiesShowcase } from "@/components/VarietiesShowcase";
 import { ArticlesGrid } from "@/components/ArticlesGrid";
 import { WhySection } from "@/components/WhySection";
+import { ContactSection } from "@/components/ContactSection";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <VarietiesShowcase />
       <ArticlesGrid />
       <WhySection />
+      <ContactSection />
     </>
   );
 }

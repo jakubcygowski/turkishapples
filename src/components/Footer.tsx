@@ -5,7 +5,7 @@ import { articles } from "@/content/articles";
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-bark/10 bg-paper-soft">
+    <footer className="border-t border-bark/10 bg-paper-soft">
       <Container className="py-14">
         <div className="grid gap-10 md:grid-cols-[1.3fr_1fr_1fr]">
           <div>
@@ -50,6 +50,28 @@ export function Footer() {
               <li>Isparta</li>
               <li>Karaman</li>
               <li>Niğde</li>
+            </ul>
+
+            <h3 className="mt-8 font-display text-sm font-semibold uppercase tracking-wider text-bark/70">
+              Contact
+            </h3>
+            <ul className="mt-4 space-y-2 text-sm">
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-bark/80 transition-colors hover:text-apple-red"
+                >
+                  Contact form
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="mailto:contact@turkishapples.com"
+                  className="text-bark/80 transition-colors hover:text-apple-red"
+                >
+                  contact@turkishapples.com
+                </a>
+              </li>
             </ul>
           </div>
         </div>

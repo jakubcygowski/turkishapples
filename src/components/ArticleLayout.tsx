@@ -4,6 +4,34 @@ import { ChevronRight } from "lucide-react";
 import type { Article } from "@/content/articles";
 import { Container } from "./Container";
 import { RelatedArticles } from "./RelatedArticles";
+import { ContactSection } from "./ContactSection";
+
+const topicBySlug: Record<string, { title: string; topic: string }> = {
+  "turkish-apples": {
+    title: "Ready to source Turkish apples?",
+    topic: "General inquiry",
+  },
+  "turkish-apple-varieties": {
+    title: "Need help choosing the right variety?",
+    topic: "Variety & specification request",
+  },
+  "turkish-apples-quality": {
+    title: "Want a concrete quality specification?",
+    topic: "Variety & specification request",
+  },
+  "turkish-apple-export": {
+    title: "Planning an import of Turkish apples?",
+    topic: "Export & logistics",
+  },
+  "turkish-apples-price": {
+    title: "Ask for a current Turkish apples offer",
+    topic: "Price & offer request",
+  },
+  "turkish-apple-suppliers": {
+    title: "Looking for a specific Turkish apple supplier?",
+    topic: "Supplier introduction",
+  },
+};
 
 export function ArticleLayout({ article }: { article: Article }) {
   return (
@@ -91,6 +119,14 @@ export function ArticleLayout({ article }: { article: Article }) {
       </Container>
 
       <RelatedArticles currentSlug={article.slug} />
+
+      <ContactSection
+        variant="compact"
+        eyebrow="Contact"
+        title={topicBySlug[article.slug]?.title ?? "Talk to a Turkish apple specialist"}
+        defaultTopic={topicBySlug[article.slug]?.topic}
+        description="Share your specification and destination market — we will come back with a practical, commercial answer."
+      />
     </article>
   );
 }
