@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AppleMark } from "./AppleMark";
 import { Container } from "./Container";
+import { TurkishFlag } from "./TurkishFlag";
 import { articles } from "@/content/articles";
 
 export function Footer() {
@@ -43,7 +44,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-bark/70">
+            <h3 className="flex items-center gap-2 font-display text-sm font-semibold uppercase tracking-wider text-bark/70">
+              <TurkishFlag width={16} height={11} />
               Regions
             </h3>
             <ul className="mt-4 space-y-2 text-sm text-bark/80">

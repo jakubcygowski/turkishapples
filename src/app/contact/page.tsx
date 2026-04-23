@@ -4,6 +4,7 @@ import { ChevronRight, Mail, Clock, MapPin } from "lucide-react";
 import { Container } from "@/components/Container";
 import { ContactForm } from "@/components/ContactForm";
 import { CONTACT_EMAIL } from "@/components/ContactSection";
+import { TurkishFlag } from "@/components/TurkishFlag";
 
 export const metadata: Metadata = {
   title: "Contact — Turkish Apples",
@@ -75,7 +76,8 @@ export default function ContactPage() {
             <div className="flex gap-3">
               <MapPin size={18} className="mt-0.5 flex-shrink-0 text-apple-red" />
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-wider text-bark/70">
+                <dt className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-bark/70">
+                  <TurkishFlag width={16} height={11} />
                   Sourcing regions
                 </dt>
                 <dd className="mt-1 text-bark-soft">

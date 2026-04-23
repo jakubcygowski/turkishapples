@@ -1,5 +1,6 @@
 import { Container } from "./Container";
 import { SectionHeading } from "./SectionHeading";
+import { TurkishFlag } from "./TurkishFlag";
 
 const regions = [
   {
@@ -21,7 +22,12 @@ export function RegionsStrip() {
     <section className="bg-paper-soft py-24">
       <Container>
         <SectionHeading
-          eyebrow="The regions"
+          eyebrow={
+            <span className="inline-flex items-center gap-2 align-middle">
+              <TurkishFlag width={18} height={12} />
+              The regions
+            </span>
+          }
           title="Three provinces do most of the work."
           description="The backbone of Turkish apple supply — orchards, packing houses and cold storage, all within a few hours’ drive of each other."
         />
