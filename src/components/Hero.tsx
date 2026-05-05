@@ -20,9 +20,9 @@ export function Hero() {
         <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_1fr]">
           <div>
             <h1 className="font-display text-5xl font-semibold leading-[1.05] tracking-tight text-bark sm:text-6xl md:text-7xl">
-              A story of the apple,
+              Turkish Apples —
               <br />
-              <span className="italic text-apple-red">told from Turkey.</span>
+              <span className="italic text-apple-red">a story from the orchard.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-bark-soft">
               Turkish apples are more than fruit from a country. They are an
