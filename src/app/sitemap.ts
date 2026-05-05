@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { articles } from "@/content/articles";
 
-const BASE = "https://turkishapples.com";
+const BASE = "https://www.turkishapples.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

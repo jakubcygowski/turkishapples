@@ -18,7 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://turkishapples.com"),
+  metadataBase: new URL("https://www.turkishapples.com"),
   title: {
     default: "Turkish Apples — Varieties, quality, export, price & suppliers",
     template: "%s | Turkish Apples",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Turkish Apples — Varieties, quality, export, price & suppliers",
     description:
       "A story of an export category grown in Anatolia. Varieties, quality, export, price and suppliers of Turkish apples.",
-    url: "https://turkishapples.com",
+    url: "https://www.turkishapples.com",
   },
   alternates: {
     canonical: "/",
