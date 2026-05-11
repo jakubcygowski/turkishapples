@@ -1,6 +1,7 @@
 import { Mail, MessageSquare } from "lucide-react";
 import { Container } from "./Container";
 import { ContactForm } from "./ContactForm";
+import { WhatsAppButton, WHATSAPP_DISPLAY } from "./WhatsAppButton";
 
 export const CONTACT_EMAIL = "contact@turkishapples.com";
 
@@ -62,6 +63,20 @@ export function ContactSection({
               </div>
             </div>
           </dl>
+
+          <div className="mt-8">
+            <p className="text-xs font-semibold uppercase tracking-wider text-bark/70">
+              Prefer instant chat?
+            </p>
+            <WhatsAppButton
+              variant="solid"
+              size="sm"
+              className="mt-3"
+              message="Hello, I'd like to ask about Turkish apples."
+            >
+              WhatsApp {WHATSAPP_DISPLAY}
+            </WhatsAppButton>
+          </div>
         </div>
 
         <div className="rounded-card border border-bark/10 bg-cream p-6 shadow-sm sm:p-8">

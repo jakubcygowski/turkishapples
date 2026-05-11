@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Container } from "./Container";
 import { AppleMark } from "./AppleMark";
 import { TurkishFlag } from "./TurkishFlag";
+import { WhatsAppButton } from "./WhatsAppButton";
 
 export function Hero() {
   return (
@@ -44,6 +45,12 @@ export function Hero() {
               >
                 Read the story
               </Link>
+              <WhatsAppButton
+                variant="solid"
+                message="Hello, I'd like to ask about Turkish apples."
+              >
+                Chat on WhatsApp
+              </WhatsAppButton>
             </div>
           </div>
 

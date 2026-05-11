@@ -5,6 +5,7 @@ import { Container } from "@/components/Container";
 import { ContactForm } from "@/components/ContactForm";
 import { CONTACT_EMAIL } from "@/components/ContactSection";
 import { TurkishFlag } from "@/components/TurkishFlag";
+import { WhatsAppButton, WHATSAPP_DISPLAY } from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Contact — Turkish Apples",
@@ -52,13 +53,22 @@ export default function ContactPage() {
             <p className="mt-2 text-sm leading-relaxed text-bark-soft">
               Prefer email? Write to us directly and we will reply from the same address.
             </p>
-            <a
-              href={`mailto:${CONTACT_EMAIL}`}
-              className="mt-4 inline-flex items-center gap-2 rounded-full border border-bark/15 bg-cream px-4 py-2 text-sm font-medium text-bark transition-colors hover:border-apple-red hover:text-apple-red"
-            >
-              <Mail size={16} />
-              {CONTACT_EMAIL}
-            </a>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <a
+                href={`mailto:${CONTACT_EMAIL}`}
+                className="inline-flex items-center gap-2 rounded-full border border-bark/15 bg-cream px-4 py-2 text-sm font-medium text-bark transition-colors hover:border-apple-red hover:text-apple-red"
+              >
+                <Mail size={16} />
+                {CONTACT_EMAIL}
+              </a>
+              <WhatsAppButton
+                variant="solid"
+                size="sm"
+                message="Hello, I'd like to ask about Turkish apples."
+              >
+                WhatsApp {WHATSAPP_DISPLAY}
+              </WhatsAppButton>
+            </div>
           </div>
 
           <dl className="space-y-5 text-sm">

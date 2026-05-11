@@ -2,6 +2,7 @@ import Link from "next/link";
 import { AppleMark } from "./AppleMark";
 import { Container } from "./Container";
 import { TurkishFlag } from "./TurkishFlag";
+import { WhatsAppIcon, WHATSAPP_NUMBER, WHATSAPP_DISPLAY } from "./WhatsAppButton";
 import { articles } from "@/content/articles";
 
 export function Footer() {
@@ -72,6 +73,17 @@ export function Footer() {
                   className="text-bark/80 transition-colors hover:text-apple-red"
                 >
                   contact@turkishapples.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-bark/80 transition-colors hover:text-[#1ebe5d]"
+                >
+                  <WhatsAppIcon size={14} />
+                  WhatsApp {WHATSAPP_DISPLAY}
                 </a>
               </li>
             </ul>
